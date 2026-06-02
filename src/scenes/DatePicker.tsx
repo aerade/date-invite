@@ -49,7 +49,7 @@ export default function DatePicker({ onNext }: Props) {
         ))}
       </div>
 
-      <div className="relative z-10 flex flex-col items-center px-4 py-8 max-w-sm mx-auto">
+      <div className="relative z-10 flex flex-col items-center px-4 py-8 max-w-sm mx-auto pb-24">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
