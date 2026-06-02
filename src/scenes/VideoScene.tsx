@@ -29,7 +29,7 @@ export default function VideoScene({ onNext }: Props) {
     <div className="fixed inset-0 bg-black flex items-center justify-center">
       <video
         ref={videoRef}
-        src="/video.mp4"
+        src="video.mp4"
         className="w-full h-full object-cover"
         playsInline
         autoPlay

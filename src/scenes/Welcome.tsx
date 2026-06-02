@@ -33,7 +33,7 @@ export default function Welcome({ onNext }: Props) {
 
     // Play laugh only if previous sound has fully finished
     if (!laughPlayingRef.current) {
-      const audio = new Audio("/laugh.mp3");
+      const audio = new Audio("laugh.mp3");
       audio.volume = 0.85;
       laughRef.current = audio;
       laughPlayingRef.current = true;

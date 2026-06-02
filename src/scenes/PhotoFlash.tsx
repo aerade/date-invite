@@ -33,7 +33,7 @@ export default function PhotoFlash({ onNext }: Props) {
         transition={{ duration: 0.45, type: "spring", stiffness: 180 }}
       >
         <img
-          src="/photographer.png"
+          src="photographer.png"
           alt="photographer"
           className="max-w-full max-h-full object-contain"
           style={{ maxHeight: "80vh", maxWidth: "90vw" }}

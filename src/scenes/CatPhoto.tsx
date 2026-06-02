@@ -45,7 +45,7 @@ export default function CatPhoto({ onNext }: Props) {
         className="relative"
       >
         <img
-          src="/cat.png"
+          src="cat.png"
           alt="cute cat"
           className="rounded-3xl shadow-2xl"
           style={{

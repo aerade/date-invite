@@ -12,7 +12,7 @@ export default function Curtains({ onNext }: Props) {
   useEffect(() => {
     // Stop bg music and play the curtain track
     stopBackgroundMusic();
-    const curtainAudio = new Audio("/curtain-music.mp3");
+    const curtainAudio = new Audio("curtain-music.mp3");
     curtainAudio.volume = 0.9;
     curtainAudio.play().catch(() => {});
 

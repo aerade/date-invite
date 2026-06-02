@@ -14,7 +14,7 @@ export function unlockAudio() {
 }
 
 export function playLaughter() {
-  const audio = new Audio("/laugh.mp3");
+  const audio = new Audio("laugh.mp3");
   audio.volume = 0.85;
   audio.play().catch(() => {});
 }
@@ -22,7 +22,7 @@ export function playLaughter() {
 let joyAudio: HTMLAudioElement | null = null;
 
 export function playJoy() {
-  joyAudio = new Audio("/joy.mp3");
+  joyAudio = new Audio("joy.mp3");
   joyAudio.volume = 0.9;
   joyAudio.play().catch(() => {});
 }
@@ -66,7 +66,7 @@ export function playCameraShutter() {
 }
 
 export function playAww() {
-  const audio = new Audio("/aww.mp3");
+  const audio = new Audio("aww.mp3");
   audio.volume = 0.9;
   audio.play().catch(() => {});
 }
