@@ -27,28 +27,10 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    ...(isGhPages || process.env.NODE_ENV === "production"
-      ? []
-      : [
-          import("@replit/vite-plugin-runtime-error-modal").then((m) => m.default()),
-          ...(process.env.REPL_ID !== undefined
-            ? [
-                import("@replit/vite-plugin-cartographer").then((m) =>
-                  m.cartographer({
-                    root: path.resolve(import.meta.dirname, ".."),
-                  }),
-                ),
-                import("@replit/vite-plugin-dev-banner").then((m) =>
-                  m.devBanner(),
-                ),
-              ]
-            : []),
-        ]),
   ],
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "src"),
-      "@assets": path.resolve(import.meta.dirname, "..", "..", "attached_assets"),
     },
     dedupe: ["react", "react-dom"],
   },
